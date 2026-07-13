@@ -1,0 +1,22 @@
+body {
+  overflow: hidden;
+  background-color: #0e319c;
+  height: 100vh;
+}
+.raindrop {
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  background-color: white;
+  animation: fall linear infinite;
+  top: -15px;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(110vh);
+  }
+}
