@@ -10,4 +10,10 @@ function createRaindrop() {
   }, duration * 1000);
 }
 
-setInterval(createRaindrop, 500);
+function randomRain() {
+  createRaindrop();
+  const randomDelay = Math.random() * 140 + 25;
+  setTimeout(randomRain, randomDelay);
+}
+
+randomRain();
